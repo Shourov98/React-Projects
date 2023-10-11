@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --red: #e60e0e;
+    --gray: #86e3f3;
+  }
+  * {
+    margin: 0;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* CSS for Navigation Bar */
+nav {
+    background-color: var(--gray);
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+nav ul li {
+    font-size: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--red);
+}
+
+button {
+    all: unset;
+    padding: 10px 20px;
+    background: var(--red);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #14b2a6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+    
+    nav ul li {
+        font-size: 1.2rem;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}
+
+
+/* CSS for Hero Section */
+.hero {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 20px 0;
+}
+
+.hero-btn button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.secondary-btn button {
+    background-color: #ff9800;
+}
+
+.shopping {
+    margin-top: 20px;
+}
+
+.brand-icon img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-btn button {
+        padding: 8px 16px;
+    }
+
+    .brand-icon img {
+        width: 40px;
+        margin-right: 8px;
+    }
+}
